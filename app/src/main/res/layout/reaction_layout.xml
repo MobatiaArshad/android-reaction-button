@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ReactionFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/rounded_layout"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ReactionLike"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ReactionHeart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/like" />
+
+        <ImageView
+            android:id="@+id/ReactionHeart"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/ReactionInLove"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+            app:layout_constraintStart_toEndOf="@+id/ReactionHeart"
+            app:srcCompat="@drawable/in_love" />
+
+        <TextView
+            android:id="@+id/LikeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/reaction_text_background"
+            android:gravity="center"
+            android:text="Like"
+            android:textColor="@color/text_grey"
+            app:layout_constraintBottom_toTopOf="@+id/ReactionLike"
+            app:layout_constraintEnd_toEndOf="@+id/ReactionLike"
+            app:layout_constraintStart_toStartOf="@+id/ReactionLike" />
+
+        <TextView
+            android:id="@+id/HeartTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/reaction_text_background"
+            android:gravity="center"
+            android:text="Love"
+            android:textColor="@color/text_grey"
+            app:layout_constraintBottom_toTopOf="@+id/ReactionHeart"
+            app:layout_constraintEnd_toEndOf="@+id/ReactionHeart"
+            app:layout_constraintStart_toStartOf="@+id/ReactionHeart" />
+
+        <TextView
+            android:id="@+id/WowTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/reaction_text_background"
+            android:gravity="center"
+            android:text="Wow!"
+            android:textColor="@color/text_grey"
+            app:layout_constraintBottom_toTopOf="@+id/ReactionInLove"
+            app:layout_constraintEnd_toEndOf="@+id/ReactionInLove"
+            app:layout_constraintStart_toStartOf="@+id/ReactionInLove" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
